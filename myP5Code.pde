@@ -3,6 +3,8 @@ setup = function(){
   size(600, 400); 
   background(52, 168, 83); // green grass
 
+  
+
   fill(0, 0, 0);
   ellipse(200, 200, 100, 30); // holes!
   ellipse(70, 120, 100, 30);
@@ -11,7 +13,9 @@ setup = function(){
 
   drawExtraDirt(230,190);
   drawExtraDirt(110,110);
-  drawExtraDirt(330,50);
+  drawExtraDirt(330,50); 
+    drawMole(20,40);
+   
 }
 
 //🟢drawExtraDirect Function - custom function created by Ms. Hall
@@ -23,7 +27,7 @@ var drawExtraDirt = function(dirtX, dirtY){
 };
 
 //🟢drawMole Function - custom function created for this lesson
-var drawMole = function() {
+var drawMole = function(moleX,moleY) {
     var moleX = 248;
     var moleY = 185;
 
@@ -37,5 +41,7 @@ var drawMole = function() {
     ellipse(moleX+10, moleY-15, 10, 10);
     ellipse(moleX, moleY-5, 10, 10); // nose
     ellipse(moleX, moleY+10, 20, 5); // mouth
+
+
 };
 
